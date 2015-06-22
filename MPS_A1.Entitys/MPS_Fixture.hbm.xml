@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping assembly="MPS_A1.Entitys" namespace="MPS_A1.Entitys"
+    xmlns="urn:nhibernate-mapping-2.2">
+  <class name="MPS_Fixture" table="MPS_Fixture" lazy="true">
+    <id name="FixtureID" column="FixtureID" type="int">
+    </id>
+    <property name="FixtureName"  type="string">
+      <column name="FixtureName" sql-type="nvarchar" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

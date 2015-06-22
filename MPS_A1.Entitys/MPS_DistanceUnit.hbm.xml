@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping assembly="MPS_A1.Entitys" namespace="MPS_A1.Entitys"
+    xmlns="urn:nhibernate-mapping-2.2">
+  <class name="MPS_DistanceUnit" table="MPS_DistanceUnit" lazy="true">
+    <id name="DistanceUnitID" column="DistanceUnitID" type="int">
+    </id>
+    <property name="DistanceUnit"  type="string">
+      <column name="DistanceUnit" sql-type="nvarchar" not-null="false" />
+    </property>
+    <property name="DistanceUnitName"  type="string">
+      <column name="DistanceUnitName" sql-type="nvarchar" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

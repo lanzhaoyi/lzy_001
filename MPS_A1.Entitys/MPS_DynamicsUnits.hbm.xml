@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping assembly="MPS_A1.Entitys" namespace="MPS_A1.Entitys"
+    xmlns="urn:nhibernate-mapping-2.2">
+  <class name="MPS_DynamicsUnits" table="MPS_DynamicsUnits" lazy="true">
+    <id name="DynamicsUnitsID" column="DynamicsUnitsID" type="int">
+    </id>
+    <property name="DynamicsUnits"  type="string">
+      <column name="DynamicsUnits" sql-type="nvarchar" not-null="false" />
+    </property>
+    <property name="DynamicsUnitsName"  type="string">
+      <column name="DynamicsUnitsName" sql-type="nvarchar" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

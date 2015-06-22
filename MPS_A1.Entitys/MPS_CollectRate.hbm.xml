@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping assembly="MPS_A1.Entitys" namespace="MPS_A1.Entitys"
+    xmlns="urn:nhibernate-mapping-2.2">
+  <class name="MPS_CollectRate" table="MPS_CollectRate" lazy="true">
+    <id name="CollectRateID" column="CollectRateID" type="int">
+    </id>
+    <property name="CollectRate"  type="string">
+      <column name="CollectRate" sql-type="nvarchar" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

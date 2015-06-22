@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping assembly="MPS_A1.Entitys" namespace="MPS_A1.Entitys"
+    xmlns="urn:nhibernate-mapping-2.2">
+  <class name="MPS_DetectionCurve" table="MPS_DetectionCurve" lazy="true">
+    <id name="ID" column="ID" type="int">
+    </id>
+    <property name="DetectionName"  type="string">
+      <column name="DetectionName" sql-type="nvarchar" not-null="false" />
+    </property>
+    <property name="DArticleName"  type="string">
+      <column name="DArticleName" sql-type="nvarchar" not-null="false" />
+    </property>
+    <property name="DprobeName"  type="string">
+      <column name="DprobeName" sql-type="nvarchar" not-null="false" />
+    </property>
+    <property name="DplatformName"  type="string">
+      <column name="DplatformName" sql-type="nvarchar" not-null="false" />
+    </property>
+    <property name="DFixtureName"  type="string">
+      <column name="DFixtureName" sql-type="nvarchar" not-null="false" />
+    </property>
+    <property name="DCollectRateName"  type="string">
+      <column name="DCollectRateName" sql-type="nvarchar" not-null="false" />
+    </property>
+    <property name="DTestMName"  type="string">
+      <column name="DTestMName" sql-type="nvarchar" not-null="false" />
+    </property>
+    <property name="StartRate"  type="string">
+      <column name="StartRate" sql-type="nvarchar" not-null="false" />
+    </property>
+    <property name="EndRate"  type="string">
+      <column name="EndRate" sql-type="nvarchar" not-null="false" />
+    </property>
+    <property name="DStartForceValue"  type="string">
+      <column name="DStartForceValue" sql-type="nvarchar" not-null="false" />
+    </property>
+    <property name="DDynamicsUnitsName"  type="string">
+      <column name="DDynamicsUnitsName" sql-type="nvarchar" not-null="false" />
+    </property>
+    <property name="DDistanceUnitName"  type="string">
+      <column name="DDistanceUnitName" sql-type="nvarchar" not-null="false" />
+    </property>
+    <property name="DSensorType"  type="string">
+      <column name="DSensorType" sql-type="nvarchar" not-null="false" />
+    </property>
+    <property name="DFileName"  type="string">
+      <column name="DFileName" sql-type="nvarchar" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>

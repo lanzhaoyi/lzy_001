@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping assembly="MPS_A1.Entitys" namespace="MPS_A1.Entitys"
+    xmlns="urn:nhibernate-mapping-2.2">
+  <class name="MPS_Probe" table="MPS_Probe" lazy="true">
+    <id name="ProbeID" column="ProbeID" type="int">
+    </id>
+    <property name="ProbeName"  type="string">
+      <column name="ProbeName" sql-type="nvarchar" not-null="false" />
+    </property>
+  </class>
+</hibernate-mapping>
